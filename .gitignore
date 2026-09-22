@@ -1,0 +1,45 @@
+# =========================
+# Python
+# =========================
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# =========================
+# Environment / secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Large datasets
+# =========================
+data/raw/
+data/processed/
+*.log
+*.tar
+*.tar.gz
+
+# =========================
+# Generated artifacts
+# =========================
+artifacts/
+*.joblib
+
+# =========================
+# OS / IDE
+# =========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+*.zip
+*.csv
