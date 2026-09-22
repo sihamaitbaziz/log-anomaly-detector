@@ -31,11 +31,9 @@ Instead of treating every log line independently, the system transforms raw logs
 - [Running the Real Experiment](#running-the-real-experiment)
 - [Kaggle](#kaggle)
 - [Reproducibility](#reproducibility)
-- [Generated Reports](#generated-reports)
 - [Limitations](#limitations)
 - [Future Work](#future-work)
 - [Technologies](#technologies)
-- [Author](#author)
 - [License](#license)
 
 ---
@@ -318,10 +316,8 @@ python main.py dashboard
 
 ### Dashboard Screenshots
 
-| Overview | Alert Triage | Live Analysis |
-|---|---|---|
-| ![Overview](reports/screenshots/overview.png) | ![Alert Triage](reports/screenshots/alert-triage.png) | ![Live Analysis](reports/screenshots/live-analysis.png) |
-
+Overview 
+![Overview](reports/screenshots/overview.png) 
 ---
 
 ## Project Structure
@@ -489,18 +485,6 @@ The main configuration is centralized in `logad/config.py`:
 | BGL windows | 30 / 60 / 300 seconds |
 
 This makes the experiments easier to reproduce and modify.
-
----
-
-## Generated Reports
-
-- Main evaluation results: `reports/metrics.csv`
-- Visualizations: `reports/figures/`
-  - `window_size_tradeoff.png`
-  - `alert_volume.png`
-  - `fpr_at_80_recall.png`
-
-These files summarize the completed real-data experiment.
 
 ---
 
